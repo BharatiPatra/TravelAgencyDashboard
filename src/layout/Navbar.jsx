@@ -20,16 +20,13 @@ export default function Navbar() {
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-gray-900/90 to-gray-900/95 backdrop-blur-md" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(120,119,198,0.1),rgba(0,0,0,0))]" />
 
-      {/* Border Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
-
       <div className="container mx-auto px-4 py-4 relative">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold">
             <span className="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">
               Wander
             </span>
-            <span className="text-white">Lust</span>
+            <span className="text-white">Haven</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,7 +35,7 @@ export default function Navbar() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                  ? "text-white"
                   : "text-gray-400 hover:text-purple-400 transition-colors"
               }
             >
@@ -48,7 +45,7 @@ export default function Navbar() {
               to="/destinations"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                  ? "text-white"
                   : "text-gray-400 hover:text-purple-400 transition-colors"
               }
             >
@@ -58,7 +55,7 @@ export default function Navbar() {
               to="/tours"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                  ? "text-white"
                   : "text-gray-400 hover:text-purple-400 transition-colors"
               }
             >
@@ -68,7 +65,7 @@ export default function Navbar() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                  ? "text-white"
                   : "text-gray-400 hover:text-purple-400 transition-colors"
               }
             >
@@ -78,7 +75,7 @@ export default function Navbar() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                  ? "text-white"
                   : "text-gray-400 hover:text-purple-400 transition-colors"
               }
             >
@@ -116,7 +113,7 @@ export default function Navbar() {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white py-2 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                    ? "text-white py-2"
                     : "text-gray-400 hover:text-purple-400 transition-colors py-2"
                 }
                 onClick={closeMenu}
@@ -127,7 +124,7 @@ export default function Navbar() {
                 to="/destinations"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white py-2 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                    ? "text-white py-2"
                     : "text-gray-400 hover:text-purple-400 transition-colors py-2"
                 }
                 onClick={closeMenu}
@@ -138,7 +135,7 @@ export default function Navbar() {
                 to="/tours"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white py-2 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                    ? "text-white py-2"
                     : "text-gray-400 hover:text-purple-400 transition-colors py-2"
                 }
                 onClick={closeMenu}
@@ -149,7 +146,7 @@ export default function Navbar() {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white py-2 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                    ? "text-white py-2"
                     : "text-gray-400 hover:text-purple-400 transition-colors py-2"
                 }
                 onClick={closeMenu}
@@ -160,7 +157,7 @@ export default function Navbar() {
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white py-2 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-purple-400"
+                    ? "text-white py-2"
                     : "text-gray-400 hover:text-purple-400 transition-colors py-2"
                 }
                 onClick={closeMenu}

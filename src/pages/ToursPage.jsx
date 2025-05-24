@@ -9,7 +9,7 @@ const tours = [
   {
     id: 1,
     name: "Bali Adventure Tour",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    image: "bali.jpg",
     rating: 4.8,
     reviews: 2341,
     price: 1299,

@@ -120,13 +120,10 @@
 }
 
 @keyframes subtle-zoom {
-  0% {
-    transform: scale(1.05);
+  0%, 100% {
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
     transform: scale(1.05);
   }
 }
@@ -136,18 +133,34 @@
 }
 
 @keyframes gradient-x {
-  0% {
-    background-position: 0% 50%;
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
   }
   50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    background-size: 200% 200%;
+    background-position: right center;
   }
 }
 
 .animate-gradient-x {
-  animation: gradient-x 3s ease infinite;
-  background-size: 200% 200%;
+  animation: gradient-x 15s ease infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(17, 24, 39, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.7);
 }
