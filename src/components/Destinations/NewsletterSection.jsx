@@ -12,13 +12,13 @@ export function NewsletterSection() {
             Subscribe to our newsletter to receive updates on new destinations
             and exclusive offers.
           </p>
-          <div className="flex gap-4 max-w-md mx-auto">
+          <div className="flex items-center gap-2 max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
               className="flex-1 px-6 py-3 rounded-full bg-gray-800 text-white placeholder-gray-400 border border-purple-500/20 focus:outline-none focus:border-purple-500"
             />
-            <Button variant="primary" className="px-8">
+            <Button variant="primary" className="whitespace-nowrap">
               Subscribe
             </Button>
           </div>
